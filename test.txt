@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-local commit1
-=======
-remote commit
->>>>>>> a30be746af40b948f8cd7326cb76e4f2665314a4
+local commmit
