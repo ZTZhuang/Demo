@@ -1,3 +1,2 @@
 local commmit
-remote commmit
 
