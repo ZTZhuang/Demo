@@ -1,3 +1,17 @@
+﻿
+  mounted() {
+    var imgHandler = async function(state) {
+      if (state) {
+        var fileInput = document.querySelector("#uniqueId input"); //隐藏的file元素
+        fileInput.click(); //触发事件
+      }
+    };
+    this.$refs.newEditor.quill
+      .getModule("toolbar")
+      .addHandler("image", imgHandler);
+    this.richText = this.ShowData;
+  },
+
   computed: {
     headers() {
       return {
@@ -6,6 +20,7 @@
       };
     }
   },
+
   watch: {
     richText() {
       this.blur();
@@ -14,3 +29,4 @@
       this.richText = this.ShowData;
     }
   },
+
