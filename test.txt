@@ -1,5 +1,16 @@
-
-remote commit
-
-remote commmit
-
+  computed: {
+    headers() {
+      return {
+        "X-Litemall-Admin-Token": getToken(),
+        "X-Litemall-IdentiFication": getIdentiFication()
+      };
+    }
+  },
+  watch: {
+    richText() {
+      this.blur();
+    },
+    ShowData() {
+      this.richText = this.ShowData;
+    }
+  },
